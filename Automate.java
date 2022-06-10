@@ -23,12 +23,10 @@ public class Automate {
                 if(delta[i][j] != null) {
                     System.out.print(i+"\t");
                     System.out.print(delta[i][j].val+"\t");
-                    if (delta[i][j].suivant != null) {
                         while (delta[i][j].suivant != null){
                             System.out.print(delta[i][j].suivant.val+"\t");
                             delta[i][j].getNextSuivant();
                         }
-                    }
                     System.out.println(j);
                 }
                 if (estEtatFin(i)){
